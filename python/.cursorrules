@@ -1,0 +1,57 @@
+# Cursor Rules for Python Code
+
+## Rule 1: Code Documentation
+- **Files**: [**/*.py]
+- **Message**: "Follow documentation standards:
+  - Module-level docstrings
+  - Function/class docstrings (Google style)
+  - Type hints for parameters and returns
+  - Usage examples where appropriate"
+
+## Rule 2: Code Style
+- **Files**: [**/*.py]
+- **Message**: "Follow PEP 8 guidelines:
+  - Use black for formatting
+  - Use isort for import sorting
+  - Maximum line length of 88 characters
+  - Consistent naming conventions"
+
+## Rule 3: Testing Requirements
+- **Files**: [**/*.py]
+- **Message**: "Ensure proper testing:
+  - Unit tests for new functions/classes
+  - Integration tests where applicable
+  - Minimum 80% test coverage
+  - Test documentation"
+
+## Rule 4: Error Handling
+- **Files**: [**/*.py]
+- **Message**: "Implement proper error handling:
+  - Custom exception classes
+  - Meaningful error messages
+  - Appropriate exception hierarchy
+  - Error logging"
+
+## Rule 5: Dependencies
+- **Files**: [requirements.txt, setup.py, pyproject.toml]
+- **Message**: "Manage dependencies properly:
+  - Document all requirements
+  - Specify version constraints
+  - Update requirements.txt/pyproject.toml
+  - Document dependency purposes"
+
+## Rule 6: Security
+- **Files**: [**/*.py]
+- **Message**: "Follow security best practices:
+  - Sanitize user inputs
+  - Use environment variables for secrets
+  - Implement proper authentication
+  - Regular dependency updates"
+
+## Rule 7: Performance
+- **Files**: [**/*.py]
+- **Message**: "Consider performance implications:
+  - Profile code when necessary
+  - Optimize database queries
+  - Use appropriate data structures
+  - Document performance considerations"

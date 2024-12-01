@@ -1,0 +1,47 @@
+# Cursor Rules for Kubernetes Manifests
+
+## Rule 1: Resource Documentation
+- **Files**: [**/*.yaml, **/*.yml]
+- **Message**: "Each Kubernetes manifest must include:
+  - Use latest Kubernetes API version from https://kubernetes.io/releases/
+  - Resource purpose in comments
+  - Resource requirements
+  - Dependencies
+  - Author information"
+
+## Rule 2: Resource Labels
+- **Files**: [**/*.yaml, **/*.yml]
+- **Message**: "Ensure proper labeling:
+  - app.kubernetes.io/name
+  - app.kubernetes.io/instance
+  - app.kubernetes.io/component
+  - app.kubernetes.io/managed-by"
+
+## Rule 3: Resource Limits
+- **Files**: [**/*.yaml, **/*.yml]
+- **Message**: "Define resource limits and requests:
+  - CPU limits and requests
+  - Memory limits and requests
+  - Storage requirements if applicable"
+
+## Rule 4: Security Context
+- **Files**: [**/*.yaml, **/*.yml]
+- **Message**: "Implement security best practices:
+  - Define security contexts
+  - Find the base image that compatible with the security context such as unpriviliged user
+  - Set non-root users
+  - Configure read-only root filesystem where possible"
+
+## Rule 5: Configuration Management
+- **Files**: [**/*.yaml, **/*.yml]
+- **Message**: "Follow configuration management practices:
+  - Use ConfigMaps for configuration
+  - Use Secrets for sensitive data
+  - Document all configuration options"
+
+## Rule 6: Health Checks
+- **Files**: [**/*.yaml, **/*.yml]
+- **Message**: "Include appropriate health checks:
+  - Define liveness probes
+  - Define readiness probes
+  - Set appropriate timeout values"

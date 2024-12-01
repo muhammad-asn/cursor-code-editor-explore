@@ -1,0 +1,38 @@
+# Cursor Rules for Bash Scripts
+
+## Rule 1: Script Header Documentation
+- **Files**: [**/*.sh]
+- **Message**: "Every bash script must include a header with:
+  - Script purpose
+  - Usage instructions
+  - Author information
+  - Dependencies
+  - Date created/modified"
+
+## Rule 2: Error Handling
+- **Files**: [**/*.sh]
+- **Message**: "Implement proper error handling:
+  - Use set -e for exit on error
+  - Use set -u for undefined variables
+  - Include trap commands for cleanup"
+
+## Rule 3: Script Permissions
+- **Files**: [**/*.sh]
+- **Message**: "Ensure correct script permissions:
+  - Execute permission (chmod +x) for runnable scripts
+  - Document any special permission requirements"
+
+## Rule 4: Code Style
+- **Files**: [**/*.sh]
+- **Message**: "Follow bash scripting best practices:
+  - Use shellcheck for linting
+  - Use meaningful variable names
+  - Add comments for complex logic
+  - Use functions for reusable code"
+
+## Rule 5: Environment Variables
+- **Files**: [**/*.sh]
+- **Message**: "Document and validate environment variables:
+  - List required environment variables
+  - Provide example .env file if needed
+  - Validate variables at script start
