@@ -5,9 +5,9 @@
 - **Message**: "Every bash script must include a header with:
   - Script purpose
   - Usage instructions
-  - Author information
+  - Author information with this format [Muhammad Ardivan] ([muhammad.a.s.nugroho@gdplabs.id])
   - Dependencies
-  - Date created/modified"
+  - Date created/modified with current date in this format DD-MM-YYYY"
 
 ## Rule 2: Error Handling
 - **Files**: [**/*.sh]
@@ -36,3 +36,8 @@
   - List required environment variables
   - Provide example .env file if needed
   - Validate variables at script start
+
+## Rule 6: Update README.md
+- **Files**: [README.md]
+- **Update File**: bash/README.md
+- **Message**: "Update README.md with the latest script information"
