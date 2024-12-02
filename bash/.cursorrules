@@ -1,6 +1,12 @@
 # Cursor Rules for Bash Scripts
 
-## Rule 1: Script Header Documentation
+
+## Rule 1: Update README.md
+- **Files**: [README.md]
+- **Update File**: bash/README.md
+- **Message**: "Update README.md in simplest format with table of latest script with .sh extension, no more information"
+
+## Rule 2: Script Header Documentation
 - **Files**: [**/*.sh]
 - **Message**: "Every bash script must include a header with:
   - Script purpose
@@ -9,7 +15,7 @@
   - Dependencies
   - Date created/modified with current date in this format DD-MM-YYYY"
 
-## Rule 2: Error Handling
+## Rule 3: Error Handling
 - **Files**: [**/*.sh]
 - **Message**: "Implement proper error handling:
   - Use set -e for exit on error
@@ -36,8 +42,3 @@
   - List required environment variables
   - Provide example .env file if needed
   - Validate variables at script start
-
-## Rule 6: Update README.md
-- **Files**: [README.md]
-- **Update File**: bash/README.md
-- **Message**: "Update README.md with the latest script information"
